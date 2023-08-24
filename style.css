@@ -1,0 +1,149 @@
+body {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+#body {
+    width: 100%;
+}
+
+.header {
+    height: 5em;
+    padding: 0 5em;
+    display: flex;
+    align-items: center;
+    background-color: rgba(135, 154, 154, 0.598);
+    overflow: hidden;
+}
+
+.header div:first-child {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header div:first-child img {
+    width: 4em;
+    border-radius: 50%;
+}
+
+.header div:first-child h3 {
+    font-weight: 600;
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+.header div:first-child span {
+    background-color: rgb(44, 41, 41);
+    border-radius: 4px;
+    width: 3em;
+    height: 2em;
+    cursor: pointer;
+}
+
+.header div span:hover {
+    background-color: greenyellow;
+}
+
+ #sideNav {
+    background-color: black;
+    display: block;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    display: none;
+    padding: 1em 3em;
+}
+
+ #sideNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.5em 0;
+}
+
+#sideNav a:hover {
+    color: greenyellow;
+}
+
+
+#sideNav a:first-child {
+    display: block;
+    font-size: 3em;
+    width: 100%;
+    text-align: end;
+}
+
+.main {
+   padding: 3em;
+}
+
+.main> div:first-child {
+    display: flex;
+    padding: 0 5em;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.main-input input {
+    height: 2em;
+    font-size: 1em;
+    width: 50%;
+    padding-right: 3em;
+    margin-right: 3em;
+}
+
+.main-input button {
+    height: 2em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.main-input button:hover {
+    background-color:greenyellow;
+}
+
+
+.main-display {
+    padding: 0 3em;
+    margin: auto;
+    display: flex;
+}
+
+.main-display > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 1em;
+}
+
+.main-display > div >p:first-child {
+    font-weight: 600;
+    font-size: 2em;
+    border-bottom: 1px solid grey;
+}
+
+.main-display > div > div {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.2em 1em;
+}
+
+.main-display > div > div >p {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 60%;
+}
+
+.main-display > div > div >button {
+    width: 20%;
+    height: 2em;
+}
+
+

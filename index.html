@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="body">
+        <div class="header">
+            <div>
+                <img src="./logo.png" alt="logo" />
+                <h3>ToDoList</h3>
+                <span onClick="openNav()"></span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-input">
+                <input type="text" id="input-box" placeholder="Insert subject here..." />
+                <button class="add-button" onClick="submit()">ADD</button>
+            </div>
+            <div class="main-display">
+                <div id="todo">
+                  <p>TO DO</p>
+                  <p id="todo-notification">There is no Task.</p>
+                  <div id="todo-text"> 
+                  </div>
+                </div>
+                <div id="done">
+                  <p>DONE</p>
+                  <p id="done-notification">There is no Task.</p>
+                  <div id="done-text"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sideNav">
+        <a onclick="closeNav()">&times</a>
+        <a onclick="viewDones()">View Dones</a>
+        <a onclick="viewAll()">View All</a>
+    </div>
+</body>
+
+</html>
